@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>papa-parse</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.0.1</version>
     <name>PapaParse</name>
     <description>WebJar for PapaParse</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/papa-parse</url>
         <connection>scm:git:https://github.com/webjars/papa-parse.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/papa-parse.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>papa-parse-3.0.1</tag>
     </scm>
     
     <build>
@@ -84,9 +84,9 @@
                         <configuration>
                             <target>
                                 <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" >
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}">
                                     <patternset>
-                                        <include name="**/papaparse*.js"/>
+                                        <include name="**/papaparse*.js" />
                                     </patternset>
                                 </unzip>
                                 <echo message="moving resources" />
