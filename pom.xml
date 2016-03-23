@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>papa-parse</artifactId>
-    <version>4.1.1-SNAPSHOT</version>
+    <version>4.1.0-1-SNAPSHOT</version>
     <name>PapaParse</name>
     <description>WebJar for PapaParse</description>
     <url>http://webjars.org</url>
@@ -24,7 +24,8 @@
         <requirejs>
             {
                 "paths": {
-                    "papa-parse": "papa-parse"
+                    "papa-parse": "papaparse",
+                    "papaparse": "papaparse"
                 }
             }
         </requirejs>
